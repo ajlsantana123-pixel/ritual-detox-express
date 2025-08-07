@@ -2,41 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Feminine, natural design system for wellness quiz */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Soft feminine background gradient */
+    --background: 20 40% 98%;
+    --foreground: 330 25% 25%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Card styling with soft warmth */
+    --card: 20 50% 97%;
+    --card-foreground: 330 25% 25%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 20 50% 97%;
+    --popover-foreground: 330 25% 25%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary - soft rose/pink for feminine touch */
+    --primary: 340 60% 70%;
+    --primary-foreground: 0 0% 100%;
+    --primary-soft: 340 40% 85%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary - sage green for natural feel */
+    --secondary: 140 30% 75%;
+    --secondary-foreground: 330 25% 25%;
+    --secondary-soft: 140 20% 90%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted tones */
+    --muted: 30 20% 92%;
+    --muted-foreground: 330 15% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent - warm peach */
+    --accent: 25 60% 80%;
+    --accent-foreground: 330 25% 25%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Natural earth tones */
+    --earth: 35 40% 85%;
+    --earth-dark: 35 30% 60%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --destructive: 0 70% 65%;
+    --destructive-foreground: 0 0% 100%;
 
-    --radius: 0.5rem;
+    --border: 30 20% 88%;
+    --input: 30 20% 95%;
+    --ring: 340 60% 70%;
+
+    --radius: 1rem;
+
+    /* Gradients for beautiful backgrounds */
+    --gradient-primary: linear-gradient(135deg, hsl(340, 60%, 75%) 0%, hsl(320, 50%, 80%) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(140, 30%, 80%) 0%, hsl(160, 25%, 85%) 100%);
+    --gradient-warm: linear-gradient(135deg, hsl(20, 40%, 95%) 0%, hsl(30, 35%, 93%) 100%);
+    --gradient-soft: linear-gradient(180deg, hsl(340, 40%, 95%) 0%, hsl(20, 30%, 97%) 100%);
+    
+    /* Shadows for depth */
+    --shadow-soft: 0 4px 20px -4px hsl(340, 30%, 80%, 0.15);
+    --shadow-card: 0 8px 30px -8px hsl(340, 25%, 75%, 0.2);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
 
