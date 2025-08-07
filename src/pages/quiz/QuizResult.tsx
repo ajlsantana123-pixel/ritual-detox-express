@@ -7,14 +7,6 @@ import { useQuiz } from '@/contexts/QuizContext';
 export const QuizResult = () => {
   const { totalSteps } = useQuiz();
 
-  useEffect(() => {
-    // Redirecionar automaticamente após 3 segundos
-    const timer = setTimeout(() => {
-      window.location.href = 'https://naviroo.site/';
-    }, 3000);
-
-    return () => clearTimeout(timer);
-  }, []);
 
   const handleRedirect = () => {
     window.location.href = 'https://naviroo.site/';
@@ -67,9 +59,6 @@ export const QuizResult = () => {
           Acessar Apresentação Completa
         </QuizButton>
 
-        <p className="text-sm text-muted-foreground mt-4">
-          Redirecionando automaticamente em alguns segundos...
-        </p>
       </div>
     </QuizLayout>
   );

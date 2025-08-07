@@ -17,6 +17,7 @@ import { PreviousAttemptsQuestion } from "./pages/quiz/PreviousAttemptsQuestion"
 import { TimeStrugglingQuestion } from "./pages/quiz/TimeStrugglingQuestion";
 import { ClothingFeelingsQuestion } from "./pages/quiz/ClothingFeelingsQuestion";
 import { FinalQuestionsPage } from "./pages/quiz/FinalQuestionsPage";
+import { ProcessingAnswers } from "./pages/quiz/ProcessingAnswers";
 import { QuizResult } from "./pages/quiz/QuizResult";
 
 const queryClient = new QueryClient();
@@ -39,6 +40,7 @@ const App = () => (
             <Route path="/quiz/time-struggling" element={<TimeStrugglingQuestion />} />
             <Route path="/quiz/clothing-feelings" element={<ClothingFeelingsQuestion />} />
             <Route path="/quiz/final-questions" element={<FinalQuestionsPage />} />
+            <Route path="/quiz/processing" element={<ProcessingAnswers />} />
             <Route path="/quiz/result" element={<QuizResult />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />

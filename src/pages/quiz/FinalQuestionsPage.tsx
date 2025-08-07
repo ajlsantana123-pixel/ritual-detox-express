@@ -86,7 +86,7 @@ export const FinalQuestionsPage = () => {
     if (localStep < questions.length) {
       setLocalStep(localStep + 1);
     } else {
-      navigate('/quiz/result');
+      navigate('/quiz/processing');
     }
   };
 
